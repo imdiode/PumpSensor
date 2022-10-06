@@ -1,10 +1,5 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-Created on Tue Aug 10 13:03:11 2021
-
-@author: base
-"""
 import matplotlib.pyplot as plt
 
 def plot_training(history,what='loss',saving=False,name='training'):

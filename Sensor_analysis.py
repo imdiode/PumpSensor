@@ -1,26 +1,5 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-Created on Thu Jul 15 16:16:12 2021
-
-@author: Jan Werth
-This script uses the data from https://ga-data-cases.s3.eu-central-1.amazonaws.com/pump_sensor.zip
-
-Here we take a look at the data to see what is usefull information and how to manipulate the data.
-
-ToDo: 
-   next step would be to remove outliers with z-score
-   
-   also try not to remove sensors 'sensor_06','sensor_07','sensor_08','sensor_09'. How would the results change
-      
-   optimize line 96  data=data.drop(labels=['sensor_06','sensor_07','sensor_08','sensor_09'],axis=1)
-   Here we create a copy which might lead to crashes
-   
-   Look furhter into the future than 10min
-   
-   Try GRU / Transformers for better performance (and maybe Random forrest for embedded devices)
-
-"""
 
 import pandas as pd
 import matplotlib.pyplot as plt

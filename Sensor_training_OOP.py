@@ -1,28 +1,5 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-Created on Tue Jul 20 11:35:39 2021
-
-@author: Jan Werth
-
-Here we us the maniulated data which we analyzed in Sensor_analysis.py 
-
-
-1# Here we first load the data.
-2# Then we map the target strings to int
-3# Scale the Sensor data between 0-1 with MinMax scaler
-4# transform the timeseries into a supervised learning dataset. This is done by creating a moving window with the pandas shift function:
-    Thanks to Jason Brownlee
-5# Split the data in TRain Val Test based on visualinspection so that each has at least one failure in the set
-6# One hot encode the target for class prediction. Signal prediction does not need the one hot encoding
-7# Setup the model (use the functional api one). The model has two outputs. One for signal prediction and one for class prediction
-8# Train or load the model
-9# plot the results
-
-toDo :    
-  Attention: test_x  is also shited. meaning the plot does not account for the prediction?? 
-  Result: test_y_raw did not show any difference!? interesting.
-"""
 
 import pandas as pd
 import numpy as np
